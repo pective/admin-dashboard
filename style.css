@@ -8,13 +8,23 @@ body {
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
-
 }
 .sidebar {
     grid-area: sidebar;
-    display: grid;
     background-color: #167bbe;
     color: white;
+}
+.sidebar-content {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1.8em;
+    margin-left: 1em;
+}
+.sidebar-content > * > * {
+    line-height: 1.5em;
+}
+.sidebar-branding {
+    align-content: center;
 }
 .header {
     grid-area: header;
