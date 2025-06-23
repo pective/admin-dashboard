@@ -1,23 +1,21 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .container {
     display: grid;
     grid-template: 1fr 5fr / 1fr 6fr;
-    grid-template-areas: 
-    "sidebar header"
-    "sidebar main";
+    min-height: 100vh;
 }
 .sidebar {
-    grid-area: sidebar;
-    background-color: #167bbe;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #1992D4;
     color: white;
 }
 .sidebar-content {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
-    gap: 1.8em;
+    gap: 4em;
     margin-left: 1em;
 }
 .sidebar-content > * > * {
@@ -27,10 +25,10 @@ body {
     align-content: center;
 }
 .header {
-    grid-area: header;
+    grid-area: 1 / 2 / 2 / 3;
     display: grid;
 }
 .main {
-    grid-area: main;
+    grid-area: 2 / 2 / 3 / 4;
     display: grid;
 }
