@@ -98,4 +98,18 @@ body {
 .main {
     grid-area: 2 / 2 / 3 / 4;
     display: grid;
+    grid-template: 30px 1fr / 4fr 1.5fr;
+    margin-top: 30px;
+    margin-left: 2vw;
+    font-size: 1.15rem;
+}
+.main-projects {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 2em;
+}
+.main-projects-project {
+    border: 2px solid orange;
+    border-radius: 10px;
 }
