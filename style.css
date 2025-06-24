@@ -22,7 +22,12 @@ body {
     line-height: 1.5em;
 }
 .sidebar-branding {
+    display: flex;
     align-content: center;
+    align-items: center;
+}
+.sidebar-branding-icon {
+    filter: invert(95);
 }
 .header-top {
     display: grid;
