@@ -15,8 +15,7 @@ body {
 }
 .sidebar-content {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    gap: 4em;
+    grid-template-rows: 0.7fr 2fr 1fr;
     margin-left: 1em;
 }
 .sidebar-content > * > * {
@@ -28,7 +27,7 @@ body {
     align-items: center;
     font-size: 1.5rem;
     gap: 0.3em;
-    font-weight: 500;
+    font-weight: 600;
 }
 .sidebar-branding-icon {
     filter: invert(95);
@@ -37,6 +36,20 @@ a {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
+}
+.sidebar-tabs ul,
+.sidebar-settings ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2em;
+    font-weight: 500;
+}
+.sidebar-tabs img,
+.sidebar-settings img {
+    height: 20px;
+    filter: invert(95);
+    align-self: center;
+    margin-right: 1em;
 }
 .header {
     max-height: 178px;
