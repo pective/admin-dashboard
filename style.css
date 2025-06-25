@@ -29,6 +29,9 @@ body {
 .sidebar-branding-icon {
     filter: invert(95);
 }
+.header {
+    max-height: 178px;
+}
 .header-top {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -108,13 +111,27 @@ body {
 .main-projects {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, 250px);
     gap: 2em;
+}
+h4 {
+    margin-block: 0;
 }
 .main-projects-project {
     border-left: 5px solid orange;
     border-radius: 10px;
     background-color: white;
     box-shadow: -1px 7px 7px 0px rgba(0,0,0,0.24);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.main-projects-project > * {
+    margin-left: 20px;
+}
+.project-actions {
+    display: flex;
+    justify-content: end;
+    gap: 1.2rem;
 }
