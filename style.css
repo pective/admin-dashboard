@@ -174,9 +174,40 @@ h4 {
 .side-announcements h4 {
     margin-bottom: 10px;
 }
+.side-trending h4 {
+    margin-block: 10px;
+}
 .announcements-box-content {
     margin-inline: 2em;
 }
 .announcements-box-content p {
     margin-top: 5px;
+}
+.side-trending-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 7px 7px 0px rgba(0,0,0,0.24);
+    font-size: 0.9rem;
+    align-content: center;
+    overflow: scroll;
+    padding: 2em;
+}
+.trending-account {
+    display: grid;
+    grid-template: 1fr 1fr / 0.3fr 1fr;
+}
+.trending-box-content {
+    display: grid;
+    gap: 1.5em;
+}
+.trending-account img {
+    height: 50px;
+    grid-row: 1 / 3;
+    border-radius: 60px;
+}
+.trending-account span:first-of-type {
+    font-weight: 600;
+}
+.trending-account span:last-of-type {
+    color: #3a3a3a;
 }
